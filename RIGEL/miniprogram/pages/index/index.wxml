@@ -1,0 +1,51 @@
+<!--search box-->
+<view class="search">
+  <input placeholder="输入资料名称" bindconfirm="search" confirm-type="done"></input>
+  <image src="cloud://cloud1-2g3m2kgo20305e3e.636c-cloud1-2g3m2kgo20305e3e-1306008726/img/icon/搜索.png" style="width:50rpx;height:50rpx"></image>
+</view>
+<!--search list-->
+<view class="list" wx:for="{{search}}" wx:key="_id">
+  <navigator class="list_1" url="../product_detail/product_detail?id={{item._id}}">
+    <view class="list_1">
+    <!--<image src="{{item.src[0]}}" style="width:100rpx;height:100rpx;margin-left:10rpx"></image>-->
+    <view>{{item.name}}</view>
+    <!--<view style="margin-right:50rpx;">￥:{{item.price}}</view>-->
+  </view>
+  </navigator>
+  
+  <view class="line"></view>
+</view>
+<!--swiper-->
+<view class="banner">
+  <swiper class="banner_1" autoplay="true" circular="true" interval="3000" indicator-dots="true">
+    <swiper-item  wx:for="{{banner}}" wx:key="_id">
+      <image src="{{item.src}}" class="img"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<!--cat
+<view class="cat">
+  <view class="cat_1" wx:for="{{cat}}" wx:key="_id">
+    <navigator url="../category_1/category_1?name={{item.name}}">
+      <image src="{{item.src}}" style="width:120rpx;height:120rpx"></image>
+      <text>{{item.name}}</text>
+    </navigator>  
+  </view>
+</view>-->
+<!--product
+<view class="product">
+<view class="line"></view>
+  <block wx:for="{{product}}" wx:key="_id">
+    <navigator class="product_1" url="../product_detail/product_detail?id={{item._id}}">
+      <image src="{{item.src[0]}}" class="img_1"></image>
+      <view class="product_2">
+        <text>{{item.name}}</text>
+        <text style="font-size:15px;font-weight:500">￥{{item.price}}</text>
+      </view>
+    </navigator>
+  </block>
+</view>-->  
+<view class="line"></view>
+<!--<view>
+  <image class="photo" src="cloud://cloud1-2g3m2kgo20305e3e.636c-cloud1-2g3m2kgo20305e3e-1306008726/guide/Document3 - Word 5_26_2021 14_19_35.png"></image>
+</view>-->

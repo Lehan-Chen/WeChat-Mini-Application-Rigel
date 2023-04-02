@@ -1,0 +1,124 @@
+Page{
+  background-color: #009cde;
+}
+
+
+.search{
+  width: 85%;
+  height: 60rpx;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgb(186, 199, 212);
+  border-radius: 50rpx;
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+  align-items: center;
+  align-self: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.banner{
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin-top: 50rpx;
+}
+.banner_1{
+  width: 700rpx;
+  height: 300rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+.img{
+  width: 700rpx;
+  height: 300rpx;
+  border-radius: 10rpx;
+}
+
+.cat{
+  width: 94.7%;
+  height: 245rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #009cde;
+  justify-content: space-between;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+.cat_1{
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10rpx;
+  border: 1rpx solid silver;
+}
+
+.line{
+  width: 100%;
+  height: 5rpx;
+  background-color: rgba(255, 255, 255, 0.233);
+  margin-bottom: 30rpx;
+}
+.product{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  align-items: center;
+  background-color: #fff;
+}
+.product_1{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.img_1{
+  width: 350rpx;
+  height: 350rpx;
+  border-radius: 20rpx;
+}
+.product_2{
+  display: flex;
+  flex-direction: row;
+  height: 60rpx;
+  border: 1px solid silver;
+  width: 60%;
+  background-color: rgb(245, 239, 239);
+  border-radius: 10rpx;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+  margin-top: 10rpx;
+  margin-bottom: 30rpx;
+}
+.list{
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 120rpx;
+  align-self: center;
+  border-radius: 10rpx;
+  margin-top: 10rpx;
+}
+.list_1{
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.photo{
+  display: flex;
+  align-self: center;
+  width: 100%;
+  height: 850rpx;
+}

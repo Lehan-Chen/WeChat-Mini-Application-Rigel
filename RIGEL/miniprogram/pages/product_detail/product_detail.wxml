@@ -1,0 +1,32 @@
+<!--swiper-->
+<view class="banner">
+  <swiper class="banner_1" autoplay="true" circular="true" interval="3000" indicator-dots="true">
+    <swiper-item  wx:for="{{product_src}}" wx:key="index">
+      <image src="{{item}}" style="width:750rpx;height:750rpx"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<!--product info-->
+<view class="product">
+  <!--<view class="product_1" style="width: 800rpx; height: 100rpx; display: flex; box-sizing: border-box; left: NaNrpx; top: NaNrpx"></view>-->
+    <view class="gname" style="width: 704rpx; height: 115rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">{{product_name}}</view>
+    <!--<view style="color:#009cde">￥{{product_price}}</view>-->
+  
+  <!--<view style="color: #009cde; width: 214rpx; height: 136rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">ISBN: {{product_detail}}</view>-->
+</view>
+<view class="line"></view>
+
+<view class="product_dt" style="width: 750rpx; height: 94rpx; display: flex; box-sizing: border-box; left: NaNrpx; top: NaNrpx">
+  <text user-select="true" style="color:#009cde" bindtap="dt">电子版链接: pan.baidu.com/s/{{product_pdf}}</text>
+</view>
+<view class="com">评论</view>
+<block wx:for="{{comment}}" wx:key="_id">
+  <view class="comitem">
+    <!--<text>{{item.name}} comments: </text>-->
+    <text class="remark">{{item.content}}</text>
+  </view>
+
+</block>
+<input class="input" bindinput="getComment" placeholder="输入评论"></input>
+<button type="primary" bindtap="submit">提交</button>
+<image src="{{product_dt_src}}" mode="widthFix" style="width:750rpx"></image>
